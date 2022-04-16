@@ -64,8 +64,8 @@ main {
     position: absolute;
     right: 0;
     top: 0;
-    width: 8%;
-    padding-top: 20px;
+    width: 9%;
+    padding-top: 25px;
 }
 
 .nav__button__container__burguer:focus-within {
@@ -94,8 +94,8 @@ main {
     position: absolute;
     right: 0;
     top: 0;
-    width: 8%;
-    padding-top: 20px;
+    width: 9%;
+    padding-top: 25px;
 }
 
 .nav__button__container__x:focus-within {

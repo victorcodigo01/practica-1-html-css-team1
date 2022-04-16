@@ -1,0 +1,127 @@
+* 
+{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box ;
+}
+
+header 
+{
+    position: sticky;
+    top: 0;
+}
+
+main 
+{
+    min-height: 100vh;
+    font-family: Oswald;
+    background-image: url(https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+}
+
+
+input 
+{
+    border-radius: 2px;
+    color: black;
+    width:30vh; 
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    font-family: Oswald;
+}
+
+h4 
+{
+    padding-top: 1rem;
+    text-align: center;
+    color: white;
+    font-family: 'comic-sans-bold';
+}
+
+p 
+{
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+    .form__blockgeneral {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        margin: 20px;
+        color: white;
+        opacity: 1.2;
+    }
+
+    .form__blockgeneral h4 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .form__blockgeneral p 
+    {
+        font-size: 1rem;
+    }
+
+    .form__blockgeneral input [type="radio"] 
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .controls  
+    {                /*clase de la caja de los input*/
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        border: black;
+    }
+
+    .situacion 
+    {                   /*clase de la caja de los input*/
+        display: flex;
+        justify-content: center;
+    }
+
+    .labelin 
+    {
+        text-align: right;
+    }
+
+    input[type=radio] 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+
+input[type=checkbox] 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=button] {
+    color:black;
+    }
+
+    .div__radiocontainer {
+        display:flex;
+        justify-content: center;
+        padding: 30px;
+        margin: 20px;
+    }
+
+footer {
+    margin-top: auto;
+}
+

@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box ;
+}
+
+
+main {
+display: flex;
+}
+
+footer {
+    margin-top: auto;
+
+}
+
+
+
+main {
+
+
+
+}
+
+
+
+input {
+        border-radius: 2px;
+        color: black;
+        width:30vh; 
+}
+
+label {
+    text-align: center;
+    font-family: Oswald;
+}
+
+h4 {
+    padding-top: 1rem;
+    text-align: center;
+    color: white;
+    font-family: 'comic-sans-bold';
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+
+}
+
+.form-register {
+    
+}
+
+.form-register h4 {
+    
+}
+
+.form-register p {
+    
+}
+
+.form-register input [type="radio"] {
+    
+}
+
+.controls {
+    
+    
+}
+
+.labelin {
+    
+}
+
+
+input[type="button"] {
+
+}
+
+input[type="radio"] {
+    
+    
+}
+
+input[type="checkbox"] {
+    
+    
+    }

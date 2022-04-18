@@ -29,6 +29,7 @@ main {
 .header__logo {
     max-width:16%;
     min-width: 4rem;
+    padding-left: 5px;
 }
 
 
@@ -37,6 +38,7 @@ main {
 .nav {
     border-bottom: 5px solid #e7dede;
     padding-bottom: 15px;
+    padding-top: 10px;
     z-index: 10;
     visibility: hidden;
 
@@ -117,7 +119,7 @@ main {
 }
 
 .nav__link {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: inherit;
     text-decoration: inherit;
 }
@@ -125,7 +127,7 @@ main {
 .nav__link:hover {
     color: #ffffff;
     background-color: #1b1c20;
-    padding: 25px 10px 25px 10px;
+    padding: 10px 10px 10px 10px;
     text-decoration: underline;
 }
 
@@ -137,7 +139,8 @@ main {
 }
 
 #nav__social-media-icon {
-    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
 }
 
 #nav__social-media-icon:hover{
@@ -196,6 +199,12 @@ footer > p {
 
     
 @media screen and (min-width:1025px) {
+
+    .header__logo {
+        max-width:161,11px;
+        min-width: 4rem;
+    }
+
     .nav__button__container__burguer, .nav__button__container__x {
         opacity: 0;
     }
@@ -218,7 +227,20 @@ footer > p {
         flex-direction: row;
     }
 
+    .nav__link {
+        font-size: 1.2rem;
+    }
+
+    .nav__link:hover {
+        padding: 25px 10px 25px 10px;
+    }
+
+    .nav__social-media-container {
+        padding-right: 15px;
+    }
+
     #nav__social-media-icon {
-        font-size: 2.3rem;
+        height: 2.3rem;
+        width: 2.3rem;
     }
 }

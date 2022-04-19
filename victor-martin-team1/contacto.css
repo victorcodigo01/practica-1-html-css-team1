@@ -47,6 +47,22 @@ p
     font-size: 0.7rem;
 }
 
+  /* div.uno 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+
+div.dos 
+{
+    
+    display: flex;
+    flex-direction: row;
+}     
+
+
     .form__blockgeneral {
         display: flex;
         flex-direction: column;
@@ -70,10 +86,11 @@ p
         font-size: 1rem;
     }
 
-    .form__blockgeneral input [type="radio"] 
+    .form__blockgeneral input [type="radio"] /*especificidad 21*/
     {
         display: flex;
         flex-direction: row;
+
     }
 
     .controls  
@@ -96,7 +113,12 @@ p
         text-align: right;
     }
 
-    input[type=radio] 
+    .input__checkbox
+    {
+        
+    }
+
+input[type=radio] /*especificidad 11*/
 {
     display: flex;
     justify-content: center;
@@ -116,9 +138,9 @@ input[type=button] {
 
     .div__radiocontainer {
         display:flex;
-        justify-content: center;
-        padding: 30px;
-        margin: 20px;
+        /* justify-content: center; */
+        /* padding: 30px;
+        margin: 20px; */
     }
 
 footer {

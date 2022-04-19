@@ -11,9 +11,11 @@
     </head>
 
     <body>
-        <main>
-            <form class="form__blockgeneral" action="get">
+        <main> <!-- etiqueta padre de form -->
+            <form class="form__blockgeneral" action="get"> 
+                <!-- form padre de div -->
                 <div class="uno">
+                    <!-- div padre de h4, p y label input, textarea,  -->
                     <h4>Formulario de Contacto</h4>
                     <p>Gracias por tomarte el tiempo para contactar con nosotros y ayudarnos a mejorar</p>
 
@@ -28,9 +30,10 @@
                     placeholder="Introduce tu edad, debes ser mayor de edad" maxlength="9" name="age">
                 
                     <label for="rol">¿Qué rol describe mejor tu sitiuación actual?</label>
-                        <div class="situacion">
+                        <div class="situacion"> <!-- div padre de select -->
                             <select id="rol" name="role">
-                                <option value="desepmpleado">Selecciona tu rol actual</option>
+                                <!-- select padre de option value -->
+                                <option value="desempleado">Selecciona tu rol actual</option>
                                 <option value="Estudiante">Estudiante</option>
                                 <option value="junior">Trabajo a tiempo completo</option>
                                 <option value="senior">Freelance</option>
@@ -52,19 +55,39 @@
                 
             
                     <p> <i>¿Qué recomendaciones te gustaría recibir? (Marca todas las que apliquen )</i> </p>
-
+                    <div class="dos">
+                        <div class="input__checkbox">
                         <input type="checkbox" id="cbox1" value="first_checkbox"> 
                         <label for="cbox1">Proyectos Front-end</label> <br>
+                        </div>
+
+                        <div>
                         <input type="checkbox" id="cbox2" value="second_checkbox"> 
                         <label for="cbox2">Proyectos Back-end</label> 
+                        </div>
+
+                        <div>
                         <input type="checkbox" id="cbox3" value="third_checkbox"> 
                         <label for="cbox3">Social Media (Marketing)</label>
+                        </div>
+
+                        <div>
                         <input type="checkbox" id="cbox4" value="fourth_checkbox"> 
                         <label for="cbox4">Desarrollo de Videojuegos</label> 
+                        </div>
+
+                        <div>
                         <input type="checkbox" id="cbox5" value="fifth_checkbox"> 
                         <label for="cbox5">Tutoriales de UX/UI</label>
+                        </div>
+
+                        <div>
                         <input type="checkbox" id="cbox6" value="sixth_checkbox"> 
                         <label for="cbox6">Otros</label>
+                        </div>
+
+                    </div>
+                    <!-- div  input-button text area, date -->
 
                         <p>¿Cuando preferirías que te lo contásemos?</p>
                         <input type="date" id="fecha">

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact-form.css">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form action="">
+        <section class="form__first-container">
+            <h1 class="form-title">Formulario de Contacto</h1>
+            <h2 class="form-subtitle">Gracias por tomarte el tiempo para contactar con nosotros y ayudarnos a mejorar</h2>
+            <section class="form-personal-info">
+                <label for="NAME">Nombre</label>
+                <input type="text" id="NAME" name="name" required>
+                <label for="EMAIL">Email</label>
+                <input type="email" id="EMAIL" name="email" required>
+                <label for="AGE">Edad</label>
+                <input type="text" id="AGE" name="age" required min="18">
+                <label for="ROLE">¿Qué rol describe mejor tu situación actual?</label>
+                <select name="" id="ROLE" required>
+                    <option value="">Seleciona tu rol actual</option>
+                    <option value="study">Estudiante</option>
+                    <option value="work">Trabajo a tiempo completo</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="unemployed">Buscando trabajo</option>
+                </select>
+            </section>
+            <section class="form-recomendations__container">
+                <h2>¿Recomendarías esta página a un conocido?</h2>
+                <section class="form-radio__recomendations">
+                    <label for="YES">Definitivamente Si</label>
+                    <input type="radio" id="YES">
+                    <label for="MAYBE">Quizás</label>
+                    <input type="radio" id="MAYBE">
+                    <label for="NO">No estoy seguro</label>
+                    <input type="radio" id="NO">
+                </section>
+            </section>
+        </section>
+        <section class="form__second-container">
+            <section class="form-other-recommendations__container">
+                <h2 class="form-other-recommendations__title">¿Qué recomendaciones te gustaría recibir? (Marca todas las que apliquen)</h2>
+                <input type="checkbox" id="FRONT">
+                <label for="FRONT">Proyectos Front-end</label>
+                <input type="checkbox" id="BACK">
+                <label for="BACK">Proyectos Back-end</label>
+                <input type="checkbox" id="MEDIA">
+                <label for="MEDIA">Social Media (Marketing)</label>
+                <input type="checkbox" id="GAMES">
+                <label for="GAMES">Desarrollo de Videojuegos</label>
+                <input type="checkbox" id="UXUI">
+                <label for="UXUI">Tutoriales de UX/UI</label>
+                <input type="checkbox" id="OTHERS">
+                <label for="OTHERS">Others</label>
+            </section>
+            <section class="form-contact-date-suggestions">
+                <label for="DATE">¿Cuándo preferirías que te contactásemos?</label>
+                <input type="date" name="contact-date" id="DATE">
+                <label for="SUGGESTIONS">¿Otros comentarios o sugerencias?</label>
+                <textarea name="suggestions" id="SUGGESTIONS" cols="30" rows="10"></textarea>    
+            </section>
+        </section>
+        <section class="form__third-container">
+            <button class="form-send-button">Enviar</button>
+        </section>
+    </form>
+</body>
+</html>

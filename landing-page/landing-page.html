@@ -13,62 +13,63 @@
     <section class="banner">
 
        <div>
-           <div class="text__video">
-               <p class="title__video">BIENVENIDO A LA PRÁCTICA DE HTML  Y CSS</p>
+           <div class="banner__video--text">
+               <p class="banner__video--title">BIENVENIDO A LA PRÁCTICA DE HTML  Y CSS</p>
                <p>Vamos a crear</p>
                <p>una web responsive</p>
                <p>y animada.</p>
            </div>
    
-           <video autoplay loop>
+           <video class="banner__video" autoplay loop>
                <source src="./fotos-video/Pexels Videos 4703.mp4" type="video/mp4">   
            </video>
-
        </div> 
 
     </section>
 
     <section class="cards__container">
 
-        <div class="cards">
-
+        <div class="cards__title">
             <h1>Destinos turísticos en Europa</h1>
+        </div>
+
+        <div class="cards">
 
             <div class="card__one">
 
-                <div class="front__one">
-                    <p class="city__name">SEVILLA</p>
+                <div class="card__one--front">
+                    <p class="card__front--city">SEVILLA</p>
                 </div>
 
-                <div class="back__one">
-                    <h1 class="desc__title">Plaza de España</h1>
-                    <p class="desc__text">Construida para la Exposición Iberoamericana de 1929, la Plaza de España es un conjunto arquitectónico monumental que irradia carácter sevillano y andaluz.</p>
+                <div class="card__one--back">
+                    <h1 class="card__back--title">Plaza de España</h1>
+                    <p class="card__back--text">Construida para la Exposición Iberoamericana de 1929, la Plaza de España es un conjunto arquitectónico monumental que irradia carácter sevillano y andaluz.</p>
                 </div>
 
             </div>
 
             <div class="card__two">
 
-                <div class="front__two">
-                    <p class="city__name">AMSTERDAM</p>
+                <div class="card__two--front">
+                    <p class="card__front--city">AMSTERDAM</p>
                 </div>
 
-                <div class="back__two" >
-                    <h1 class="desc__title">Canales de Amsterdam</h1>
-                    <p class="desc__text">Gracias a los canales de Ámsterdam, la ciudad es conocida como la Venecia del norte. En la ciudad holandesa hay más de 1000 puentes y 75 kilómetros de canales.</p>
+                <div class="card__two--back" >
+                    <h1 class="card__back--title">Canales de Amsterdam</h1>
+                    <p class="card__back--text">Gracias a los canales de Ámsterdam, la ciudad es conocida como la Venecia del norte. En la ciudad holandesa hay más de 1000 puentes y 75 kilómetros de canales.</p>
                 </div>
 
             </div>
 
             <div class="card__three">
 
-                <div class="front__three">
-                    <p class="city__name">ROMA</p>
+                <div class="card__three--front">
+                    <p class="card__front--city">ROMA</p>
                 </div>
 
-                <div class="back__three">
-                    <h1 class="desc__title">Fontana di Trevi</h1>
-                    <p class="desc__text">La Fontana di Trevi es la fuente más grande y famosa de Roma, considerada por muchos como la fuente más hermosa del mundo.</p>
+                <div class="card__three--back">
+                    <h1 class="card__back--title">Fontana di Trevi</h1>
+                    <p class="card__back--text">La Fontana di Trevi es la fuente más grande y famosa de Roma, considerada por muchos como la fuente más hermosa del mundo.</p>
                 </div>
 
             </div>
@@ -79,153 +80,173 @@
 
     <section class="pricing__container">
 
-        <div class="title__sub">
-          <h1 class="pricing__title">Find a plan that's right for you.</h1>
-          <sub class="pricing__sub">Every plan comes with a 30-day free trial.</sub>
+        <div class="pricing__info">
+          <h1 class="pricing__info-title">Find a plan that's right for you.</h1>
+          <sub class="pricing__info--subtitle">Every plan comes with a 30-day free trial.</sub>
         </div>
 
-        <div class="bronze_gold_platinum">
-            <section>
-                <div>
-                    <h1 class="txt__pricing plan__title">Bronze Packege</h1>
-                </div>
-            </section>
-            <section>
-                <div class="dollar__price__month">
-                        <p class="txt__pricing dollar">$</p>
-                        <p class="txt__pricing num">10</p>
-                        <p class="txt__pricing month">Month</p>
-                </div>
-            </section>
+        <div class="pricing__plan">
 
-            <section>
+         <div class="pricing__plan-bronze-gold-platinum">
+
+            <div class="pricing__header">
+             <section>
+                <div>
+                    <h1 class="pricing__plan--name">Bronze Packege</h1>
+                </div>
+             </section>
+             <section>
+                <div class="dollar__price__month">
+                        <p class="dollar">$</p>
+                        <p class="price">10</p>
+                        <p class="month">Month</p>
+                </div>
+             </section>
+            </div>
+
+            <div class="checks__container">
+             <section>
                 <div class="checks">
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">Unlimited Listing</p>
+                <p>Unlimited Listing</p>
                 </div>
-            </section>
+             </section>
 
-            <section>
+             <section>
                 <div class="checks" >
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">Edit Your Listing</p>
+                <p>Edit Your Listing</p>
                 </div>
-            </section>
+             </section>
 
-            <section>
+             <section>
                 <div class="checks">
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">Approve Reviews</p>
+                <p class=>Approve Reviews</p>
                 </div>
-            </section>
+             </section>
+            </div>
 
             <section>
                 <div><button class="get__button">Get Started Now</button></div>
             </section>
 
-        </div>
+         </div>
 
-        <div class="bronze_gold_platinum">
+         <div class="pricing__plan-bronze-gold-platinum ">
 
             <div class="blue__circle">
                 <p class>MOST</p>
                 <p>POPULAR</p>
             </div>
 
-            <section>
+            <div class="pricing__header">
+             <section>
                 <div>
-                    <h1 class="txt__pricing plan__title">Gold Packege</h1>
+                    <h1 class="pricing__plan--name">Gold Packege</h1>
                 </div>
-            </section>
-            <section>
+             </section>
+             <section>
                 <div class="dollar__price__month">
-                        <p class="txt__pricing dollar">$</p>
-                        <p class="txt__pricing num">19</p>
-                        <p class="txt__pricing month">Month</p>
+                        <p class="dollar">$</p>
+                        <p class="price">19</p>
+                        <p class="month">Month</p>
                 </div>
-            </section>
+             </section>
+            </div>
 
-            <section>
+
+            <div class="checks__container">  
+             <section>
                 <div class="checks">
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">Unlimited Listing</p>
+                <p>Unlimited Listing</p>
                 </div>
-            </section>
+             </section>
 
-            <section>
+             <section>
                 <div class="checks" >
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">Edit Your Listing</p>
+                <p>Edit Your Listing</p>
                 </div>
-            </section>
+             </section>
 
-            <section>
+             <section>
                 <div class="checks">
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">Approve Reviews</p>
+                <p>Approve Reviews</p>
                 </div>
-            </section>
+             </section>
 
-            <section>
+             <section>
                 <div class="checks">
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">Take Booking Online</p>
+                <p>Take Booking Online</p>
                 </div>
-            </section>
+             </section>
 
-            <section>
+             <section>
                 <div class="checks">
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">24/7 Support Service</p>
+                <p>24/7 Support Service</p>
                 </div>
-            </section>
+             </section>
+
+            </div>  
 
             <section>
                 <div><button class="get__button">Get Started Now</button></div>
             </section>
             
-        </div>
+         </div>
 
-        <div class="bronze_gold_platinum">
-            <section>
+         <div class="pricing__plan-bronze-gold-platinum">
+
+            <div class="pricing__header">
+             <section>
                 <div>
-                    <h1 class="txt__pricing plan__title">Platinum Packege</h1>
+                    <h1 class="pricing__plan--name">Platinum Packege</h1>
                 </div>
-            </section>
-            <section>
+             </section>
+             <section>
                 <div class="dollar__price__month">
-                        <p class="txt__pricing dollar">$</p>
-                        <p class="txt__pricing num">49</p>
-                        <p class="txt__pricing month">Month</p>
+                        <p class="dollar">$</p>
+                        <p class="price">49</p>
+                        <p class="month">Month</p>
                 </div>
-            </section>
+             </section>
+            </div>
 
-            <section>
+            <div class="checks__container">
+             <section>
                 <div class="checks">
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">Unlimited Listing</p>
+                <p>Unlimited Listing</p>
                 </div>
-            </section>
+             </section>
 
-            <section>
+             <section>
                 <div class="checks" >
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">Edit Your Listing</p>
+                <p>Edit Your Listing</p>
                 </div>
-            </section>
+             </section>
 
-            <section>
+             <section>
                 <div class="checks">
                 <div class="green__check">✓</div>
-                <p class="txt__pricing">Approve Reviews</p>
+                <p>Approve Reviews</p>
                 </div>
-            </section>
+             </section>
 
+            </div>
+        
             <section>
                 <div><button class="get__button">Get Started Now</button></div>
             </section>
 
-        </div>
+         </div>
+       </div>
 
     </section>
     

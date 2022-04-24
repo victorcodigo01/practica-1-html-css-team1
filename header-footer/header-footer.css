@@ -201,7 +201,10 @@ main {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1.5px solid #f0915d;
+        border-bottom: 2px solid #f0915d;
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 3px;
     }
 
     .nav__menu {

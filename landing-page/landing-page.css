@@ -37,6 +37,7 @@
 .cards__container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -243,10 +244,15 @@
 
 .pricing__info-title {
     color: #6e768d;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px;
 }
 
 .pricing__info--subtitle {
     color: #b4bdc6;
+    font-size: 1rem;
 }
 
 hr {
@@ -350,8 +356,8 @@ opacity: 0;
     align-items: center;
     font-size: 0.8rem;
     position: absolute;
-    left: 1rem;
-    top: -1rem;
+    left: 10px;
+    top: -10px;
 
 }
 
@@ -360,6 +366,7 @@ opacity: 0;
 
     .cards{
       flex-direction: row;
+      flex-wrap: wrap;
       align-content: center;
     }
 
@@ -373,6 +380,16 @@ opacity: 0;
 
     .card__three{
         max-width: 400px;
+    }
+
+    .pricing__info-title {
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    
+    .pricing__info--subtitle {
+        font-size: 1.8rem;
     }
 
     .pricing__plan-bronze-gold-platinum {
@@ -399,6 +416,9 @@ opacity: 0;
 
 @media screen and (min-width:1025px){
 
+    .pricing__info-title {
+        font-size: 3.5rem;
+    }
 
     .pricing__plan {
         flex-direction: row;
@@ -407,6 +427,7 @@ opacity: 0;
 
     .pricing__plan-bronze-gold-platinum{
         flex-direction: column;
+        position: relative;
     }
 
     .checks__container {
@@ -415,8 +436,9 @@ opacity: 0;
 
 
     .blue__circle {
-        left: 16rem;
-        top: -2rem;
+        left: auto;
+        right: 10px;
+        top: -35px;
     }
 
     .pricing__info {

@@ -8,7 +8,8 @@
 
 .banner__video {
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.9;
+    filter: brightness(0.8);
 }
 
 .banner > div {
@@ -58,6 +59,7 @@
 
 .card__one {
     width: 400px ;
+    max-width: 400px;
     height: 225px;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -107,6 +109,7 @@
 .card__two {
     width: 400px ;
     height: 225px;
+    max-width: 400px;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
@@ -155,6 +158,7 @@
 .card__three {
     width: 400px ;
     height: 225px;
+    max-width: 400px;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
@@ -243,6 +247,10 @@
 
 .pricing__info--subtitle {
     color: #b4bdc6;
+}
+
+hr {
+opacity: 0;
 }
 
 .pricing__plan-bronze-gold-platinum {
@@ -347,6 +355,7 @@
 
 }
 
+
 @media screen and (min-width:481px) {
 
     .cards{
@@ -389,6 +398,8 @@
 }
 
 @media screen and (min-width:1025px){
+
+
     .pricing__plan {
         flex-direction: row;
         margin-top: 1.5rem;
@@ -397,6 +408,11 @@
     .pricing__plan-bronze-gold-platinum{
         flex-direction: column;
     }
+
+    .checks__container {
+        border-bottom: 2px gray;
+    }
+
 
     .blue__circle {
         left: 16rem;
@@ -410,6 +426,19 @@
     .pricing__plan-bronze-gold-platinum:hover{
         transform: scale(1.08);
         transition: 0.3s linear;
+}
+
+
+.pricing__plan-bronze-gold-platinum:hover > .blue__circle {
+    transform: rotateY(360deg);
+    transition: 0.5s ease;
+}
+
+hr {
+opacity: 1;
+color: lightgray;
+width: 200px;
+margin: 20px 0px;
 }
 
 } 

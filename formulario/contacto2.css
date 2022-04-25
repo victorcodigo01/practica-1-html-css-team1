@@ -4,9 +4,48 @@
     box-sizing: border-box ;
 }
 
-form 
-{
+form {
     display: flex;
     font-family: Oswald;
     background-image: url(https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+}
+
+h1 {
+    color:white;
+}
+
+p {
+    
+    color: white;
+}
+
+h1 + p {
+    font-style: italic;
+}
+
+input {
+    border-radius: 2px;
+    color: black;
+    /* width:30vh;  */
+}
+
+label {
+    color:white;
+}
+
+/* .div_bloque-grande {
+     display: flex; 
+} */
+
+
+.select select:invalid:not(:focus-within) {
+    color: #63686B;
+}
+  
+
+input[type=radio] {           /*especificidad 11*/
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    left: 0;
 }

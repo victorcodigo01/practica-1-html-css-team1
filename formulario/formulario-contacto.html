@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <link rel="stylesheet" href="./formulario-contacto.css">
+    </head>
+
+    <body>
+        <main> <!-- etiqueta padre de form -->
+            <form class="formulario" action="get"> <!-- form padre de div -->                
+                
+                <div class="div__imagen--uno">  <!-- div padre de h4, p y label input  -->
+                    
+                    <div class="div__imagen--uno-uno">
+                        <h4 class="h4__titulo">Formulario de Contacto</h4>
+                        <p class="p__subtitulo--inicial">Gracias por tomarte el tiempo para contactar con nosotros y ayudarnos a mejorar</p>
+                    </div>
+
+                    <div class="div__imagen--uno-dos">
+                        
+                            <label class="labelin" for="get-name">Nombre</label>
+                            <input id="get-name" type="text" placeholder="Introduce tu nombre" name="name">
+                            <label class="labelin" for="get-email">Email</label>
+                            <input id="get-email" type="email" placeholder="Introduce tu email" name="e-mail">
+                            <label class="labelin" for="get-edad">Edad</label>
+                            <input id="get-edad" type="number" placeholder="Introduce tu edad, debes ser mayor de edad" maxlength="9" name="age">
+                            <label for="rol">¿Qué rol describe mejor tu sitiuación actual?</label>                        
+                            <select id="rol" name="role">                            
+                                <option value="desempleado">Selecciona tu rol actual</option>
+                                <option value="Estudiante">Estudiante</option>
+                                <option value="junior">Trabajo a tiempo completo</option>
+                                <option value="senior">Freelance</option>
+                                <option value="senior">Buscando trabajo</option>
+                            </select>  
+                                           
+                    </div>
+
+                    <div class="div__imagen--uno-tres">
+                            <p class="radio">¿Recomendarías esta página a un conocido?</p>
+                        
+                            <label for="get-radioem">Definitivamente sí</label>
+                            <input id="get-radioem" type="radio" checked name="radioem">
+                            <label for="get-radioum">Quizás</label>
+                            <input id="get-radioum" type="radio"  name="radioem">
+                            <label for="get-radioam">No estoy seguro</label>
+                            <input id="get-radioam" type="radio"  name="radioem">
+                    </div>
+
+                </div>
+            
+                <div class="div__imagen--dos">
+                    
+                    <div class="div__imagen--dos-uno"> 
+                            <p>¿Qué recomendaciones te gustaría recibir? (Marca todas las que apliquen )</p>
+                
+                            <input type="checkbox" id="cbox1" value="first_checkbox"> 
+                            <label for="cbox1">Proyectos Front-end</label> <br>
+                                        
+                            <input type="checkbox" id="cbox2" value="second_checkbox"> 
+                            <label for="cbox2">Proyectos Back-end</label> 
+                                                    
+                            <input type="checkbox" id="cbox3" value="third_checkbox"> 
+                            <label for="cbox3">Social Media (Marketing)</label>
+                                                
+                            <input type="checkbox" id="cbox4" value="fourth_checkbox"> 
+                            <label for="cbox4">Desarrollo de Videojuegos</label> 
+                                                    
+                            <input type="checkbox" id="cbox5" value="fifth_checkbox"> 
+                            <label for="cbox5">Tutoriales de UX/UI</label>
+                                                    
+                            <input type="checkbox" id="cbox6" value="sixth_checkbox"> 
+                            <label for="cbox6">Otros</label>   
+                    </div>
+                        
+                    <div class="div__imagen--dos-dos"> 
+                        <label for="cfecha">¿Cuando preferirías que te lo contásemos?</label>
+                        <input type="date" id="cfecha">
+                    </div>
+                    
+                    <div class="div__imagen--dos-tres">
+                        <label for="ctextarea">¿Otros comentarios o sugerencias?</label>
+                        <textarea name="comentario" id="ctextarea" cols="30" rows="10"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="div__imagen--tres">
+                    <input type="button" value="Enviar">
+                </div>
+
+                
+                
+            </form>
+        </main>
+    </body>
+
+</html>

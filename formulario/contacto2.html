@@ -9,45 +9,90 @@
     <title>Document</title>
 </head>
 <body>
-    <form class="form__bloquegeneral--flex" action="formulario">
-        <h1></h1>
-        <p></p>
-        <div class="div__titulos--primeros">
-            <div class="input_tres--primeros">
-                <input type="text">
-                <input type="number">
-                <input type="email">
+    <form class="form__bloquegeneral" action="get">
+        <h1>Formulario de contacto</h1>
+        <p>Gracias por tomarte el tiempo de contactar 
+            con nosotros y ayudarnos a mejorar</p>
+            
+        <div class="div_bloque-grande">
+            
+            <label for="texto-nombre">Nombre</label>
+            <input id="texto-nombre" type="text" required placeholder="Introduce tu nombre" name="nombres">
 
-                <select class="desplegable" name="" id="">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-            </div>
+            <label for="texto-email">Email</label>
+            <input id="texto-email" type="email" required placeholder="Introduce tu email" name="emails">
+                
+            <label for="texto-edad">Edad</label>
+            <input id="texto-edad" type="number" required placeholder="Introduce tu edad, debes ser mayor de edad" name="edades">
+                
+            <label for="rol">¿Qué rol describe mejor tu situación actual?</label>
+            <!-- <input list="browsers" name="myBrowser" />
+            <datalist id="browsers">
+                      <option value="Selecciona tu rol actual">
+                      <option value="Estudiante">
+                      <option value="Trabajo a tiempo completo">
+                      <option value="Freelance">
+                      <option value="Buscando trabajo">
+            </datalist> -->
+       
+            
+            <select class="select" id="rol" name="Seleccion">
+                <option value="Selecciona tu rol actual"></option>
+                <option value="Estudiante"></option>
+                <option value="Trabajo a tiempo completo"></option>
+                <option value="Freelance"></option>
+                <option value="Buscando trabajo"></option>
+             </select>
+
             <div class="input__radio">
-                <p></p>
-                <label for=""></label>
-                <input type="radio">
+                <p>¿Recomendarías esta página a un conocido?</p>
+                    <label for="radio-cir">Definitivamente sí</label>
+                    <input id="radio-cir" type="radio" checked name="radios">
+                    <label for="radio-cir">Quizás</label>
+                    <input id="radio-cir" type="radio"  name="radios">
+                    <label for="radio-cir">No estoy seguro</label>
+                    <input id="radio-cir" type="radio"  name="radios">
             </div>
-            <div class="input__checkbox">
-                <p></p>
-                <label for=""></label>
-                <input type="checkbox">
-            </div>
-            <div class="div__fechas">
-                <p></p>
-                <label for=""></label>
-                <input type="date">
-            </div>
-            <div class="div__textodearea">
+
+        </div> 
+
+            <p>¿Qué recomendaciones te gustaria recibir? (Marca todas las que apliquen)</p>
+                                                    
+
+                <input type="checkbox" id="cbox1" value="first_checkbox"> 
+                <label for="cbox1">Proyectos Front-end</label> <br>
+                                        
+                <input type="checkbox" id="cbox2" value="second_checkbox"> 
+                <label for="cbox2">Proyectos Back-end</label> 
+                                        
+                <input type="checkbox" id="cbox3" value="third_checkbox"> 
+                <label for="cbox3">Social Media (Marketing)</label>
+                                        
+                <input type="checkbox" id="cbox4" value="fourth_checkbox"> 
+                <label for="cbox4">Desarrollo de Videojuegos</label> 
+                                        
+                <input type="checkbox" id="cbox5" value="fifth_checkbox"> 
+                <label for="cbox5">Tutoriales de UX/UI</label>
+                                        
+                <input type="checkbox" id="cbox6" value="sixth_checkbox"> 
+                <label for="cbox6">Otros</label>
+                
+            
+
+            
+                <p>¿Cuando preferirías que te lo contásemos?</p>
+                <input type="date" id="fecha">
+            
+
+            
                 <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="div__boton">
+            
+
+            
                 <input type="button" value="">
-            </div>
+
         </div>
+    
     </form>
 </body>
 </html>
